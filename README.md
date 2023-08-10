@@ -84,6 +84,7 @@ updated to 22.04
      -e DISPLAY=:0 \
      -e PORT=9870 \
      -d -p 8080:9870 \
+     -p 8000:8000 \
      vital987/vubuntu:latest
    * noVNC Web-UI will be accessible on port **8080**
 
