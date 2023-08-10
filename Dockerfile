@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 
@@ -113,8 +113,6 @@ RUN apt-get update && \
     apt-get clean && \
     apt-get autoremove -y && \
     rm -rf /tmp/*
-
-EXPOSE 8000
 
 ENTRYPOINT ["supervisord", "-l", "/app/.vubuntu/assets/logs/supervisord.log", "-c"]
 
